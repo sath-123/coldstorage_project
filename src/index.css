@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+.clearfix{
+  clear:both;
+}
+a{
+  text-decoration:none;
+  transition:all 500ms ease;
+  -moz-transition:all 500ms ease;
+  -webkit-transition:all 500ms ease;
+  -ms-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+}
+a:hover{
+  text-decoration:none;
+  outline:none;
+}
+
+.manage-page .add-coldstorage .label {
+  padding-top: 3.5cm;
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.manage-page .add-coldstorage .id-box {
+  display: block;
+  width: 50%;
+  margin: .5cm auto;
+}
+
+.manage-page .add-coldstorage .id-box .id-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  box-shadow: 2px 2px rgba(0, 0, 0, .2);
+
+  color: #313131;
+  font-size: 20px;
+}
+
+.manage-page .add-coldstorage .id-box .id-bar:focus {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.manage-page .remove-coldstorage .label {
+  padding-top: 1cm;
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}

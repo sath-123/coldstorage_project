@@ -1,0 +1,130 @@
+type BatteryVoltageData @model @key(name: "BatteryVoltageDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "BatteryVoltageDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  batteryVoltage: String
+}
+
+type WaterInletTempData @model @key(name: "WaterInletTempDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "WaterInletTempDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  waterInletTemp: String
+}
+
+type AmbientTempData @model @key(name: "AmbientTempDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "AmbientTempDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  ambientTemp: String
+}
+
+type ColdStorageTempData @model @key(name: "ColdStorageTempDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "ColdStorageTempDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  coldStorageTemp: String
+}
+
+type AmbientHumidData @model @key(name: "AmbientHumidDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "AmbientHumidDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  ambientHumid: String
+}
+
+type ThermalBatteryTempData @model @key(name: "ThermalBatteryTempDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "ThermalBatteryTempDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  thermalBatteryTemp: String
+}
+
+type DewPointTempData @model @key(name: "DewPointTempDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "DewPointTempDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  dewPointTemp: String
+}
+
+type WetBulbTempData @model @key(name: "WetBulbTempDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "WetBulbTempDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  wetBulbTemp: String
+}
+
+type PowerSwitchStatusData @model @key(name: "PowerSwitchStatusDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "PowerSwitchStatusDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  powerSwitchStatus: Int
+}
+
+type DoorSensorStatusData @model @key(name: "DoorSensorStatusDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "DoorSensorStatusDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  doorSensorStatus: Int
+
+}
+type OnexRelayStatusData @model @key(name: "OnexRelayStatusDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "OnexRelayStatusDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  onexRelayStatus: Int
+}
+
+type TwoxRelayStatusData @model @key(name: "TwoxRelayStatusDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "TwoxRelayStatusDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  twoxRelayStatus: Int
+}
+
+type ThreexRelayStatusData @model @key(name: "ThreexRelayStatusDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "ThreexRelayStatusDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  threexRelayStatus: Int
+}
+
+type FourxRelayStatusData @model @key(name: "FourxRelayStatusDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "FourxRelayStatusDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  fourxRelayStatus: Int
+}
+
+type FivexRelayStatusData @model @key(name: "FivexRelayStatusDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "FivexRelayStatusDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  fivexRelayStatus: Int
+}
+
+type SixxRelayStatusData @model @key(name: "SixxRelayStatusDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "SixxRelayStatusDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  sixxRelayStatus: Int
+}
+
+type SevenxRelayStatusData @model @key(name: "SevenxRelayStatusDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "SevenxRelayStatusDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  sevenxRelayStatus: Int
+}
+
+type EightxRelayStatusData @model @key(name: "EightxRelayStatusDataByDate", fields: ["unique_deviceID", "eventDateTime"], queryField: "EightxRelayStatusDataByDate") @auth(rules: [{allow: private, operations: [read]}]) {
+  id: ID!
+  eventDateTime: String!
+  unique_deviceID: String!
+  eightxRelayStatus: Int
+}
+
+type ColdStorageID @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  coldstorage_id: String!
+}

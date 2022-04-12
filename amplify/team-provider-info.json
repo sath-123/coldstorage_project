@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-coldstorage-staging-41100-authRole",
+      "UnauthRoleArn": "arn:aws:iam::350381406283:role/amplify-coldstorage-staging-41100-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::350381406283:role/amplify-coldstorage-staging-41100-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-coldstorage-staging-41100-deployment",
+      "UnauthRoleName": "amplify-coldstorage-staging-41100-unauthRole",
+      "StackName": "amplify-coldstorage-staging-41100",
+      "StackId": "arn:aws:cloudformation:ap-south-1:350381406283:stack/amplify-coldstorage-staging-41100/7f93b160-e459-11eb-93e0-021292d5cf8a",
+      "AmplifyAppId": "do5j67q3czo5j"
+    },
+    "categories": {
+      "auth": {
+        "coldstorage": {}
+      }
+    }
+  }
+}
